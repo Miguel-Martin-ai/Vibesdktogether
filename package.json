@@ -1,13 +1,20 @@
 {
-  "name": "vibesdk-together-python",
+  "name": "vibesdk-together",
   "version": "1.0.0",
-  "description": "⚠️ This is a PYTHON package, not a Node.js/TypeScript project. See README.md for Python installation instructions.",
-  "private": true,
+  "description": "Together AI integration for VibeSDK - Python package with Node.js wrapper support",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "echo '❌ ERROR: This is a Python package. Use: python setup.py sdist bdist_wheel' && exit 1",
-    "install": "echo '❌ ERROR: This is a Python package. Use: pip install .' && exit 1",
-    "test": "echo '❌ ERROR: This is a Python package. Use: python -m unittest test_vibesdk_together.py -v' && exit 1",
-    "help": "echo '✅ This is a Python package for Together AI integration.' && echo '' && echo 'To use this package:' && echo '  1. pip install -r requirements.txt' && echo '  2. pip install .' && echo '  3. python -m unittest test_vibesdk_together.py -v' && echo '' && echo 'See README.md for complete documentation.'"
+    "build": "python setup.py sdist bdist_wheel && echo '✅ Python package built successfully in dist/'",
+    "install:python": "pip install -r requirements.txt && pip install -e .",
+    "test": "python -m unittest test_vibesdk_together.py -v",
+    "test:node": "node example-nodejs.js",
+    "demo": "python demo_together_integration.py",
+    "demo:node": "node example-nodejs.js",
+    "clean": "rm -rf dist build *.egg-info __pycache__ .pytest_cache",
+    "verify": "bash verify.sh",
+    "help": "node scripts/help.js",
+    "check": "python -c 'from vibesdk_together import TogetherAIProvider; print(\"✅ Python package is installed and working\")'"
   },
   "repository": {
     "type": "git",
@@ -17,10 +24,20 @@
     "python",
     "together-ai",
     "vibesdk",
-    "llm"
+    "llm",
+    "ai",
+    "machine-learning",
+    "nodejs-wrapper"
   ],
   "author": "Miguel Martin",
   "license": "MIT",
   "homepage": "https://github.com/Miguel-Martin-ai/Vibesdktogether#readme",
-  "note": "⚠️ IMPORTANT: This is a Python package. If you're looking for the TypeScript/Node.js VibeSDK, visit: https://github.com/cloudflare/vibesdk"
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.7.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
 }
+
+

@@ -9,6 +9,25 @@ A Python SDK adapter that integrates Together AI models with VibeSDK-compatible 
 - **Language**: Python 3.7+
 - **Package Manager**: pip (not npm/bun/yarn)
 - **Build System**: setuptools/wheel (not vite/webpack)
+- **Optional**: Node.js 14+ (for Node.js wrapper)
+
+## Dual Usage Support
+
+This package can be used in **two ways**:
+
+### Option 1: Python (Recommended)
+```bash
+pip install -r requirements.txt
+pip install .
+```
+
+### Option 2: Node.js Wrapper
+```bash
+npm run install:python  # Installs Python package
+node example-nodejs.js   # Uses Python via Node.js wrapper
+```
+
+See [USO_DUAL.md](USO_DUAL.md) for complete dual-usage documentation.
 
 ## Features
 
