@@ -1,0 +1,26 @@
+{
+  "name": "vibesdk-together-python",
+  "version": "1.0.0",
+  "description": "⚠️ This is a PYTHON package, not a Node.js/TypeScript project. See README.md for Python installation instructions.",
+  "private": true,
+  "scripts": {
+    "build": "echo '❌ ERROR: This is a Python package. Use: python setup.py sdist bdist_wheel' && exit 1",
+    "install": "echo '❌ ERROR: This is a Python package. Use: pip install .' && exit 1",
+    "test": "echo '❌ ERROR: This is a Python package. Use: python -m unittest test_vibesdk_together.py -v' && exit 1",
+    "help": "echo '✅ This is a Python package for Together AI integration.' && echo '' && echo 'To use this package:' && echo '  1. pip install -r requirements.txt' && echo '  2. pip install .' && echo '  3. python -m unittest test_vibesdk_together.py -v' && echo '' && echo 'See README.md for complete documentation.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miguel-Martin-ai/Vibesdktogether"
+  },
+  "keywords": [
+    "python",
+    "together-ai",
+    "vibesdk",
+    "llm"
+  ],
+  "author": "Miguel Martin",
+  "license": "MIT",
+  "homepage": "https://github.com/Miguel-Martin-ai/Vibesdktogether#readme",
+  "note": "⚠️ IMPORTANT: This is a Python package. If you're looking for the TypeScript/Node.js VibeSDK, visit: https://github.com/cloudflare/vibesdk"
+}

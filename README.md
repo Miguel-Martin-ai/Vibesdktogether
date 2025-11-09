@@ -1,6 +1,14 @@
 # VibeSDK Together AI Integration
 
+> **⚠️ IMPORTANT**: This is a **Python package**, not a Node.js/TypeScript project. If you're looking for the original Cloudflare VibeSDK (TypeScript), visit https://github.com/cloudflare/vibesdk
+
 A Python SDK adapter that integrates Together AI models with VibeSDK-compatible configuration patterns. This library provides a simple interface for using Together AI's powerful open-source language models in VibeSDK applications.
+
+## Language & Requirements
+
+- **Language**: Python 3.7+
+- **Package Manager**: pip (not npm/bun/yarn)
+- **Build System**: setuptools/wheel (not vite/webpack)
 
 ## Features
 

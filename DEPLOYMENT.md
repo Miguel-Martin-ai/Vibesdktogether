@@ -1,6 +1,21 @@
 # Deployment Guide
 
+> **⚠️ IMPORTANT**: This is a **Python package**. Do NOT use Node.js build tools like `npm`, `bun`, or `yarn`. Use Python tools like `pip` and `setuptools`.
+
 This guide explains how to deploy the VibeSDK Together AI integration package.
+
+## ⚠️ Common Mistakes to Avoid
+
+**DON'T USE:**
+- ❌ `npm run build` (this is not a Node.js project)
+- ❌ `bun run build` (this is not a Bun project)
+- ❌ `yarn build` (this is not a Yarn project)
+- ❌ Any TypeScript/JavaScript build tools
+
+**DO USE:**
+- ✅ `python setup.py sdist bdist_wheel` (Python package build)
+- ✅ `pip install .` (Python package install)
+- ✅ `python -m build` (modern Python build)
 
 ## Prerequisites
 
