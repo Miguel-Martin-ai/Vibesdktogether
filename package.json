@@ -1,0 +1,43 @@
+{
+  "name": "vibesdk-together",
+  "version": "1.0.0",
+  "description": "Together AI integration for VibeSDK - Python package with Node.js wrapper support",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "python setup.py sdist bdist_wheel && echo '✅ Python package built successfully in dist/'",
+    "install:python": "pip install -r requirements.txt && pip install -e .",
+    "test": "python -m unittest test_vibesdk_together.py -v",
+    "test:node": "node example-nodejs.js",
+    "demo": "python demo_together_integration.py",
+    "demo:node": "node example-nodejs.js",
+    "clean": "rm -rf dist build *.egg-info __pycache__ .pytest_cache",
+    "verify": "bash verify.sh",
+    "help": "node scripts/help.js",
+    "check": "python -c 'from vibesdk_together import TogetherAIProvider; print(\"✅ Python package is installed and working\")'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miguel-Martin-ai/Vibesdktogether"
+  },
+  "keywords": [
+    "python",
+    "together-ai",
+    "vibesdk",
+    "llm",
+    "ai",
+    "machine-learning",
+    "nodejs-wrapper"
+  ],
+  "author": "Miguel Martin",
+  "license": "MIT",
+  "homepage": "https://github.com/Miguel-Martin-ai/Vibesdktogether#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.7.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
+
+
