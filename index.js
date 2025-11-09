@@ -87,6 +87,9 @@ print(json.dumps(response))
   async completion(options) {
     const { model, prompt, maxTokens = null, temperature = 0.7 } = options;
     
+    // Properly escape the prompt for Python
+    const escapedPrompt = JSON.stringify(prompt);
+    
     const script = `
 import json
 import os
@@ -95,7 +98,7 @@ from vibesdk_together import TogetherAIProvider
 provider = TogetherAIProvider(api_key=os.getenv('TOGETHER_API_KEY'))
 response = provider.completion(
     model="${model}",
-    prompt="${prompt.replace(/"/g, '\\"')}",
+    prompt=${escapedPrompt},
     ${maxTokens ? `max_tokens=${maxTokens},` : ''}
     temperature=${temperature}
 )
