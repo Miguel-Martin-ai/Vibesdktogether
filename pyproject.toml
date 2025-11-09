@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibesdk-together"
+version = "1.0.0"
+authors = [
+    {name = "Miguel Martin", email = "miguel@example.com"}
+]
+description = "Together AI integration for VibeSDK"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["vibesdk", "together", "ai", "llm", "api"]
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Miguel-Martin-ai/Vibesdktogether"
+Repository = "https://github.com/Miguel-Martin-ai/Vibesdktogether"
+Documentation = "https://github.com/Miguel-Martin-ai/Vibesdktogether/blob/main/README.md"
+Issues = "https://github.com/Miguel-Martin-ai/Vibesdktogether/issues"
+
+[tool.setuptools]
+py-modules = ["vibesdk_together"]
